@@ -3,37 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>C02-Form</title>
+    <title>c02-demo</title>
   </head>
+
   <body>
-    <form action="#" id="form">
+    <form action="">
+      <h1>Nhập mẫu thông tin sinh viên</h1>
       <fieldset>
-        <legend>Thông tin cơ bản</legend>
-
-        <label for="fullName">Họ và tên</label>
-        <input type="text" id="fullName" />
+        <legend>Thông tin cơ bản nâng cao</legend>
         <br />
-
+        <label for="fullname">Họ và tên</label>
+        <input type="text" id="fullname" /><br /><br />
+        <label for="dob">Ngày sinh</label>
+        <input type="date" id="dob" /><br /><br />
         <span>Giới tính</span>
-        <input type="radio" name="gender" id="male" />
-        <label for="male">Nam</label>
-        <input type="radio" name="gender" id="female" />
-        <label for="male">Nữ</label>
-        <input type="radio" name="gender" id="other" />
-        <label for="male">Khác</label>
-        <br />
-
-        <span>Tổ hợp xét tuyển</span>
-        <br />
-        <input type="checkbox" name="Toán" id="toan" />
-        <label for="toan">Toán</label><br />
-        <input type="checkbox" name="Toán" id="ly" />
-        <label for="ly">Lý</label><br />
-        <input type="checkbox" name="Toán" id="hoa" />
-        <label for="hoa">Hoá</label><br />
-        <input type="checkbox" name="Toán" id="anh" />
-        <label for="anh">Anh</label>
+        <input type="radio" id="nam" name="gender" />
+        <label for="nam">Nam</label>
+        <input type="radio" id="nu" name="gender" />
+        <label for="nu">Nữ</label>
+        <input type="radio" id="khac" name="gender" />
+        <label for="khac">khác</label><br /><br />
+        <span>Tổ hợp xét tuyển</span><br />
+        <input type="checkbox" id="math" />
+        <label for="math">Toán</label><br />
+        <input type="checkbox" id="physics" />
+        <label for="physics">Lý</label><br />
+        <input type="checkbox" id="chemistry" />
+        <label for="chemistry">Hóa</label><br />
+        <input type="checkbox" id="english" />
+        <label for="english">Anh</label>
       </fieldset>
+      <br /><br />
+      <fieldset>
+        <legend>Thông tin liên lạc</legend>
+        <!-- Email : <input type="email" name="email" id="email"><br><br>
+            Số điện thoại <input type="number" name="sdt" id="sdt"> -->
+        <label for="em">Email</label>
+        <input type="email" name="email" id="em" /><br /><br />
+        <label for="sdt">Số điện thoại</label>
+        <input type="number" name="số điện thoại" id="sdt" />
+      </fieldset>
+      <br />
+      <input type="submit" value="gửi" />
     </form>
   </body>
 </html>
